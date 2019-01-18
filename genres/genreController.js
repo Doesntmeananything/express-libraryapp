@@ -1,5 +1,5 @@
-var Genre = require('../models/genre');
-var Book = require('../models/book');
+var Genre = require('./genre');
+var Book = require('../books/book');
 var async = require('async');
 
 const { body,validationResult } = require('express-validator/check');

@@ -17,7 +17,7 @@ const app = express();
 
 app.use(helmet());
 
-const mongoDB = process.env.MONGODB_URI || 'mongodb://<username>:<password>@ds113923.mlab.com:13923/local-library';
+const mongoDB = process.env.MONGODB_URI || 'mongodb://<user>:<password>@ds113923.mlab.com:13923/local-library';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
