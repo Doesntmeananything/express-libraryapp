@@ -17,7 +17,11 @@ const app = express();
 
 app.use(helmet());
 
+<<<<<<< HEAD
 const mongoDB = process.env.MONGODB_URI || 'mongodb://DMA:DB1a2n3d4r5e6y@ds113923.mlab.com:13923/local-library';
+=======
+const mongoDB = 'mongodb://<username>:<password>@<MongoDB-url>;
+>>>>>>> be60e78c4da105658afe4383a8a476b604454815
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
